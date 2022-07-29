@@ -12,7 +12,7 @@ contract MyNFT is ERC721, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() public ERC721("MyNFT", "tedNFT") {}
+    constructor() public ERC721("MyNFT", "ZeroNFT") {}
 
     function mintNFT(address recipient, string memory tokenURI) public onlyOwner returns (uint256){
         _tokenIds.increment();
